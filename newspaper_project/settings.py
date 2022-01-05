@@ -123,7 +123,7 @@ STATIC_URL = 'static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-AUTH_USER_MODEL = "users.CustomUsers"
+AUTH_USER_MODEL = "users.CustomUser"
 #This dotted pair describes the label of the Django app (which must be in your INSTALLED_APPS),
 # and the name of the Django model that you wish to use as your user model.
 
