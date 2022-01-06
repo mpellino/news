@@ -8,12 +8,12 @@ from .models import CustomUser
 class CustomUserCreationForm(UserCreationForm):
     class Meta(UserCreationForm.Meta):
         model = CustomUser
-        fields = UserCreationForm.Meta.fields + ('age',)
+        fields = ('age', 'email', 'username')
 
 class CustomUserChangeForm(UserChangeForm):
     class Meta:
         model = CustomUser
-        fields = UserChangeForm.Meta.fields
+        fields = ('age', 'email', 'username')
 
 '''
 For both new forms we are setting the model to our CustomUser 
