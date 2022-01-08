@@ -134,8 +134,6 @@ AUTH_USER_MODEL = "users.CustomUser"
 
 LOGIN_REDIRECT_URL = 'home'
 LOGOUT_REDIRECT_URL = 'home'
-LOGIN_URL = 'home' #see https://stackoverflow.com/questions/3367757/django-authentication-wrong-redirect-url-to-login-page/3367783#3367783
+
 
 CRISPY_TEMPLATE_PACK = "bootstrap4"
-
-EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
